@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Demo
-Check out the live demo: [Live Demo](bookit-udfq.vercel.app)
+Check out the live demo: [Live Demo](https://bookit-udfq.vercel.app)
 
 ## Getting Started
 
