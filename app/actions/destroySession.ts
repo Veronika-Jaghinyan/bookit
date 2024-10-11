@@ -26,6 +26,7 @@ async function destroySession() {
       success: true,
     };
   } catch (error) {
+    console.log('Session error', error)
     return {
       error: 'Error deleting session',
     };

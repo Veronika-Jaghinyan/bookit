@@ -20,7 +20,7 @@ const Login = () => {
       setIsAuthenticated(true);
       router.push('/');
     }
-  }, [state]);
+  }, [state, router]);
 
   return (
     <div className='flex items-center justify-center'>

@@ -17,6 +17,7 @@ const BookingCard = ({ booking }: Props) => {
   const fromatDate = (dateString: string) => {
     const date = new Date(dateString);
     const options = { month: 'short' };
+    //@ts-expect-error TO BE FIXED!
     const month = date.toLocaleString('en-US', options, { timeZone: 'UTC' });
     // Get date
     const day = date.getUTCDate();
@@ -28,7 +29,7 @@ const BookingCard = ({ booking }: Props) => {
       hour12: true,
       timeZone: 'UTC',
     };
-
+    //@ts-expect-error TO BE FIXED!
     const time = date.toLocaleString('en-US', timeOptions);
     // Final formatted string
     return `${month} ${day} at ${time}`;

@@ -13,10 +13,10 @@ const CancelBookingButton = ({ bookingId }: Props) => {
     );
     if (confirmed) {
       try {
-        const response = await cancelBooking(bookingId);
+        await cancelBooking(bookingId);
         toast.success('Successfully canceled');
       } catch (error) {
-        console.log('Failed to cancel the booking');
+        console.log('Failed to cancel the booking', error);
         toast.error('Failed to cancel the booking');
       }
     }

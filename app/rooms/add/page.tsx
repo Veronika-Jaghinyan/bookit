@@ -17,7 +17,7 @@ const AddRooms = ({}) => {
       toast.success('Successfully added');
       router.push('/');
     }
-  }, [state]);
+  }, [state, router]);
 
   return (
     <>

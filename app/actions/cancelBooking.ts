@@ -59,7 +59,7 @@ async function cancelBooking(bookingId: any) {
       };
     }
   } catch (error) {
-    console.log('Failed to cancel the booking');
+    console.log('Failed to cancel the booking', error);
     return {
       error: 'Failed to cancel the booking'
     }

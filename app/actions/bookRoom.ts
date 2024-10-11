@@ -64,7 +64,7 @@ async function bookRoom(previousState: any, formData: any) {
     )
       return;
 
-    const newBooking = await databases.createDocument(
+    await databases.createDocument(
       process.env.NEXT_PUBLIC_APPWRITE_DATABASE,
       process.env.NEXT_PUBLIC_APPWRITE_COLLECTION_BOOKINGS,
       ID.unique(),

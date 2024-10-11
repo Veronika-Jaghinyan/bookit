@@ -74,7 +74,7 @@ async function deleteRoom(roomId: any) {
       };
     }
   } catch (error) {
-    console.log('Failed to delete the room');
+    console.log('Failed to delete the room', error);
     return {
       error: 'Failed to delete the room'
     }

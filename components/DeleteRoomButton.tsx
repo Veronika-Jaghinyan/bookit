@@ -14,10 +14,10 @@ const DeleteRoomButton = ({roomId} : Props) => {
     );
     if (confirmed) {
       try {
-        const response = await deleteRoom(roomId);
+        await deleteRoom(roomId);
         toast.success('Successfully deleted');
       } catch (error) {
-        console.log('Failed to delete the room');
+        console.log('Failed to delete the room', error);
         toast.error('Failed to delete the room');
       }
     }

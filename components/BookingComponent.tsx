@@ -4,10 +4,9 @@ import { useFormState } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { toast } from 'react-toastify';
 import bookRoom from '@/app/actions/bookRoom';
-import { Room } from '@/types';
 
 type Props = {
-  room: Room;
+  room: any;
 };
 
 const BookingForm = ({ room }: Props) => {
@@ -21,7 +20,7 @@ const BookingForm = ({ room }: Props) => {
       toast.success('Room has been booked');
       router.push('/bookings');
     }
-  }, [state]);
+  }, [state, router]);
 
   return (
     <div className='mt-6'>
